@@ -86,9 +86,9 @@ console.log(pessoa);
 console.log(pessoa.caminhouQuantosMetros); // quantos metros ela andou 
 
 pessoa.apresentacao = function(){
-    var sexo = 'o';
-    var idadeAnos = 'anos'
-    var metrosCaminhados = 'metros';
+    let sexo = 'o';
+    let idadeAnos = 'anos'
+    let metrosCaminhados = 'metros';
     if(pessoa.sexo === 'Feminino'){
         sexo = 'a';
     };
@@ -120,5 +120,10 @@ console.log(pessoa.apresentacao());
  * para subir algo no git hub é preciso observar atentamento agora
  * 
  * git push https://github.com/YgorMendes/JsNinja master
+ * 
+ * // para clonar
+ * git clone https://github.com/YgorMendes/JsNinja.git
+ * 
+ * 
 
  */
