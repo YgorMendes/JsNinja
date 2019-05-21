@@ -118,4 +118,7 @@ console.log(pessoa.apresentacao());
  * git commit -m "comentário" -> comenta as modificações/inserções... (só pode ser usado após o git add )
  * 
  * para subir algo no git hub é preciso observar atentamento agora
+ * 
+ * git push https://github.com/YgorMendes/JsNinja master
+
  */
