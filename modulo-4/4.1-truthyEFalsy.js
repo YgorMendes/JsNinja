@@ -14,40 +14,85 @@ NaN - 'ou' = string vacia*/
 
 let teste;
 
-if (false){teste = true;} else {teste = false;};
+if (false) {
+  teste = true;
+} else {
+  teste = false;
+};
 console.log(teste); // false
 
-if (0){teste = true;} else {teste = false;};
+
+if (0) {
+  teste = true;
+} else {
+  teste = false;
+};
 console.log(teste); // false
 
-if (-0){teste = true;} else {teste = false;};
+if (-0) {
+  teste = true;
+} else {
+  teste = false;
+};
 console.log(teste); // false
 
-if (undefined){teste = true;} else {teste = false;};
+if (undefined) {
+  teste = true;
+} else {
+  teste = false;
+};
 console.log(teste); // false
 
-if (null){teste = true;} else {teste = false;};
+if (null) {
+  teste = true;
+} else {
+  teste = false;
+};
 console.log(teste); // false
 
-if (NaN){teste = true;} else {teste = false;};
+if (NaN) {
+  teste = true;
+} else {
+  teste = false;
+};
 console.log(teste); // false
 
-if (''){teste = true;} else {teste = false;};
+if ('') {
+  teste = true;
+} else {
+  teste = false;
+};
 console.log(teste); // false
 
-if (' '){teste = true;} else {teste = false;};
-console.log(teste); //true
+if (' ') {
+  teste = true;
+} else {
+  teste = false;
+};
+console.log(teste); // true
 
-if (1){teste = true;} else {teste = false;};
-console.log(teste); //true
+if (1) {
+  teste = true;
+} else {
+  teste = false;
+};
+console.log(teste); // true
 
-if ([]){teste = true;} else {teste = false;};
-console.log(teste); //true
+if ([]) {
+  teste = true;
+} else {
+  teste = false;
+};
+console.log(teste); // true
 
-if ({}){teste = true;} else {teste = false;};
-console.log(teste); //true
+if ({}) {
+  teste = true;
+} else {
+  teste = false;
+};
+console.log(teste); // true
 
 // Uma maneira de verificar qual é o valor boolean é usando '!!'
 
-console.log(!! 2)
-console.log(!! 0)
+console.log(!! 2); // true
+console.log(!! 0); // false
