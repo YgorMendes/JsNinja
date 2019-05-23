@@ -55,14 +55,17 @@ carro.addPessoas = function(pessoasNoCarro){
   let pessoa = quantasPessoasCabem === 1 ? 'pessoa' : 'pessoas';
   let pessoaNoCarro = totalPessoas === 1 ? 'pessoa no carro' : 'pessoas no carro';
 
-  if (carro.quantidadePessoas === carro.assentos) {
+  if (carro.quantidadePessoas === carro.assentos && totalPessoas >= carro.assentos) {
     return 'O carro já esta lotado!'; 
   };
   if (totalPessoas > carro.assentos) {
     return 'Só cabem mais ' + quantasPessoasCabem + ' ' + pessoa;
   };
+  if (totalPessoas <= 0) {
+    return 'O carro está vacio';
+  };
   carro.quantidadePessoas += pessoasNoCarro;
-  return 'Já temos '+ carro.quantidadePessoas + ' ' + pessoaNoCarro;
+  return 'Temos '+ carro.quantidadePessoas + ' ' + pessoaNoCarro;
 };
 console.log(carro.addPessoas(1)); // deve mostrar 'pessoa' no final da string
 console.log(carro.addPessoas(1)); // deve mostrar 'pessoas' no final da string
@@ -76,4 +79,8 @@ console.log(carro.addPessoas(6)); // deve mostrar a quantidade de assentos desoc
 
 carro.quantidadePessoas = 0;
 console.log(carro.addPessoas(1)); // deve mostrar 'pessoa' no final da string
+
+console.log(carro.addPessoas(3)); 
+console.log(carro.addPessoas(-2)); // deve diminuir o numero de pessoas no carro
+console.log(carro.addPessoas(-2)); // deve dizer que o carro c encontra vacio
 // Finalizado
