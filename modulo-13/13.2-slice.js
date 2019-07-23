@@ -19,5 +19,6 @@ console.log(arr.splice(1, 0, 2, 3, 4, 5)); // Adicionar 2, 3, 4, 5, primeira pro
 console.log(arr); // Array arr agora
 //
 
-console.log(arr.splice(1, 4, 'dois', 'três', 'quatro', 'cinco')); // Trocar vaores, primeira prop da onde quer começar, segunda prop quantos quer remover, terceira prop em diante seus substitutos
+console.log(arr.splice(1, 4, 'dois', 'três', 'quatro', 'cinco')); // Trocar valores, primeira prop da onde quer começar, segunda prop quantos quer remover, terceira prop em diante seus substitutos
+// tem como criar uma variável com os valores 'Itens' tirados de splice
 console.log(arr); // Array arr agora
