@@ -17,4 +17,4 @@ console.log(arr.lastIndexOf(5));// é a msm coisa só que procura no sentido con
 // verificar c é um array
 
 console.log(Array.isArray([])); // isso é um array
-console.log(Array.isArray({})); // isso n é um array
+console.log(Array.isArray({})); // isso n é um arrayv
