@@ -11,7 +11,7 @@
   // .previousElementSibling
   // .childElementCount // .children.length faz a msm coisa
 
-  console.log($tituloPrincipal.children); // não autorizada, ele só trás os 'nos' html
+  console.log($tituloPrincipal.children); // não autorizada, ele só trás os 'node' html
   
   console.log($tituloPrincipal.firsElementChild); // ele trás o primeiro elemento html
 

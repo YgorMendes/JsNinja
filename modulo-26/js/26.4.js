@@ -25,6 +25,6 @@
   console.log(document.querySelectorAll('.principal').length);
   //
 
-  console.log($tituloPrincipal.hasChildNodes()); // verifica c o elemento tem filho/ c tem 'nos de textos'
+  console.log($tituloPrincipal.hasChildNodes()); // verifica c o elemento tem filho/ c tem 'node de textos'
 
 })();
