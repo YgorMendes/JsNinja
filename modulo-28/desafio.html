@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es-ES">
 <head>
-	<meta charset="utf-8">
-	<title>challenge-28</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Desafio</title>
 </head>
 <body>
+  <form data-js="form-cep">
+    <input type="text" data-js="input-cep">
+    <button type="submit">Consultar CEP</button>
+  </form>
 
- CEP <input value="" data-js="getInput" type="text" name="cep">
- <button data-js="confimar"   type="submit">Confimar</button>
- <br>
- <br>
+  <div data-js="status"></div>
 
- <div data-js="message">
- 	Carregando, sucesso ou erro.
- </div>
-
- <br>
- <form action="checkout-sample" method="POST">
-   CEP <input type="text" name="cep" data-js="input" /><br>
-   Estado <input type="text" name="estado" data-js="input" /><br>
-   Cidade <input type="text" name="cidade" data-js="input" /><br>
-   Bairro <input type="text" name="bairro" data-js="input" /><br>
-   Endereço <input type="text" name="endereco" data-js="input" /><br>
-</form>
-
+  <div data-js="info-cep">
+    <p>calle: <span>- </span></p>
+    <p>Barrio: <span>- </span></p>
+    <p>Estado: <span>- </span></p>
+    <p>Ciudad: <span>- </span></p>
+    <p>CEP: <span>- </span></p>
+  </div>
 
  <script src="js/desafio.js"></script>
 </body>
